@@ -226,7 +226,7 @@ class curl {
      * @param string $name
      * @param string $value
      */
-    public function AddCurlOption($name, $value) {
+    public function addCurlOption($name, $value) {
         if (stripos($name, 'CURLOPT_') === false) {
             $name = strtoupper('CURLOPT_' . $name);
         }
